@@ -149,24 +149,24 @@ const gradients = [
     end: "rgb(244, 208, 63)",
     tags: ["vert", "jaune"],
   },
-]
+];
 
 function allTags(list) {
   /* retourner la liste des tags uniques */
-  let listTotal = []
+  let listTotal = [];
   for (let element of list) {
     if ("tags" in element) {
-      listTotal = listTotal.concat(element.tags)
+      listTotal = listTotal.concat(element.tags);
     }
   }
-  const listTagsUnique = []
+  const listTagsUnique = [];
   listTotal.forEach((el) => {
     if (!listTagsUnique.includes(el)) {
       //listTagsUnique = listTagsUnique.concat([el])
-      listTagsUnique.push(el)
+      listTagsUnique.push(el);
     }
-  })
-  return listTagsUnique
+  });
+  return listTagsUnique;
 }
 
-const uniqueTags = allTags(gradients)
+const uniqueTags = allTags(gradients);

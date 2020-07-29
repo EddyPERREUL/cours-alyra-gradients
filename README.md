@@ -31,8 +31,8 @@ function addRandomGradientBg() {
   //     headerEl -> style -> backgroundImage prends la valeurs de bgImage
 }
 
-addRandomGradientBg() // execute la fontion une fois quand le script charge
-gradientBtn.addEventListener("click", addRandomGradientBg) // execute la fonction en click
+addRandomGradientBg(); // execute la fontion une fois quand le script charge
+gradientBtn.addEventListener("click", addRandomGradientBg); // execute la fonction en click
 ```
 
 ### Méthodes à utiliser :
